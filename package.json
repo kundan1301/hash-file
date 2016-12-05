@@ -1,0 +1,24 @@
+{
+  "name": "hash-file",
+  "version": "1.0.0",
+  "description": "return hash of file and string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kundan1301/hash-file.git"
+  },
+  "keywords": [
+    "file",
+    "hash",
+    "string"
+  ],
+  "author": "Kundan Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kundan1301/hash-file/issues"
+  },
+  "homepage": "https://github.com/kundan1301/hash-file#readme"
+}
