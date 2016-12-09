@@ -1,6 +1,6 @@
 {
-  "name": "hash-file",
-  "version": "1.0.0",
+  "name": "hashk",
+  "version": "1.0.1",
   "description": "return hash of file and string",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,10 @@
     "url": "git+https://github.com/kundan1301/hash-file.git"
   },
   "keywords": [
-    "file",
+    "file hash",
     "hash",
+    "url hash",
+    "http/https url hash",
     "string"
   ],
   "author": "Kundan Kumar",
