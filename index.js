@@ -34,7 +34,7 @@ function asyncUrlHash(url,option,cb){
 	var encoding = option.encoding?option.encoding:'hex';
 	var output=crypto.createHash(algo);
 	var httpMethod=url.startsWith('https')?https:http;
-	httpMethod.get(url,function(res){
+	var req=httpMethod.get(url,function(res){
 		if(res.statusCode != 200){
 			return callBack(new Error('can not download file'));
 		}
@@ -44,6 +44,9 @@ function asyncUrlHash(url,option,cb){
   			callBack(null, output.read().toString(encoding))
 		});
 	});
+	req.on('error',function(err){
+		callBack(err);
+	})
 }
 
 function syncTextHash(text,opt){
